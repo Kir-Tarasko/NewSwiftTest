@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2FP-bY-xF0">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
@@ -58,7 +58,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="42" translatesAutoresizingMaskIntoConstraints="NO" id="jKj-Pq-YFg">
                                 <rect key="frame" x="15" y="518" width="384" height="304"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XE7-LR-PcU" userLabel="A">
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XE7-LR-PcU" userLabel="A">
                                         <rect key="frame" x="0.0" y="0.0" width="384" height="44.5"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="A"/>
@@ -66,7 +66,7 @@
                                             <action selector="selectAnswer:" destination="2FP-bY-xF0" eventType="touchUpInside" id="czC-ZW-b06"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3gC-WU-Cpj">
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3gC-WU-Cpj">
                                         <rect key="frame" x="0.0" y="86.5" width="384" height="44.5"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="B"/>
@@ -74,7 +74,7 @@
                                             <action selector="selectAnswer:" destination="2FP-bY-xF0" eventType="touchUpInside" id="KhI-73-bqH"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zTk-Hq-1UD">
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zTk-Hq-1UD">
                                         <rect key="frame" x="0.0" y="173" width="384" height="44.5"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="C"/>
@@ -82,7 +82,7 @@
                                             <action selector="selectAnswer:" destination="2FP-bY-xF0" eventType="touchUpInside" id="RZd-hh-rXt"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="irt-DU-bT6">
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="irt-DU-bT6">
                                         <rect key="frame" x="0.0" y="259.5" width="384" height="44.5"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="D"/>
@@ -116,9 +116,12 @@
                     </view>
                     <navigationItem key="navigationItem" id="cVn-in-x6r"/>
                     <connections>
-                        <outlet property="buttonAnswers" destination="irt-DU-bT6" id="3O1-Gf-WYR"/>
                         <outlet property="progressBar" destination="qRd-IV-J6n" id="vn2-6I-PpP"/>
                         <outlet property="question" destination="VvM-oy-2Hm" id="vig-02-u8l"/>
+                        <outletCollection property="buttonAnswers" destination="XE7-LR-PcU" collectionClass="NSMutableArray" id="dSM-Ln-slc"/>
+                        <outletCollection property="buttonAnswers" destination="3gC-WU-Cpj" collectionClass="NSMutableArray" id="WJm-aL-0xp"/>
+                        <outletCollection property="buttonAnswers" destination="zTk-Hq-1UD" collectionClass="NSMutableArray" id="kbj-C4-iny"/>
+                        <outletCollection property="buttonAnswers" destination="irt-DU-bT6" collectionClass="NSMutableArray" id="51g-qo-Klv"/>
                         <segue destination="Bfv-Df-C6T" kind="show" identifier="result" id="av0-hN-Wro"/>
                     </connections>
                 </viewController>
