@@ -13,10 +13,8 @@ class QuestionsViewController: UIViewController {
     @IBOutlet weak var question: UILabel!
     @IBOutlet var buttonAnswers: [UIButton]!
     
-    
     let questionManager = DataManager()
     private var indexRange = -1
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
