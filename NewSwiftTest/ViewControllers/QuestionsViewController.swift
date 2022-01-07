@@ -16,8 +16,8 @@ class QuestionsViewController: UIViewController {
     @IBOutlet var buttonAnswers: [UIButton]!
     
     
-    
     let questionManager = DataManager()
+    private var indexRange = -1
   
     
     override func viewDidLoad() {
@@ -46,7 +46,14 @@ class QuestionsViewController: UIViewController {
 
 extension QuestionsViewController {
     func newQuestion() {
-        questionManager.refreshTest()
+                
+        if indexRange < questionManager.countOfQuestions {
+            indexRange += 1
+        } else if indexRange == (questionManager.countOfQuestions) {
+            showResult()
+        }
+        
+        questionManager.refreshTest(indexRange)
         question.text = questionManager.question
         
         for index in 0..<questionManager.possibleAnswers.count {
@@ -54,8 +61,12 @@ extension QuestionsViewController {
             let button = buttonAnswers[index]
             
             button.setTitle(possibleAnswer, for: .normal)
+            
+            let totalProgress = Float(indexRange) / Float(questionManager.countOfQuestions)
+            progressBar.setProgress(totalProgress, animated: true)
         }
     }
+    
     
     func showResult() {
         performSegue(withIdentifier: "result", sender: nil)
