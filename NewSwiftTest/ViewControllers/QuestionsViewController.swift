@@ -8,7 +8,7 @@
 import UIKit
 
 class QuestionsViewController: UIViewController {
-  
+    
     @IBOutlet weak var progressBar: UIProgressView!
     
     @IBOutlet weak var question: UILabel!
@@ -18,7 +18,7 @@ class QuestionsViewController: UIViewController {
     
     let questionManager = DataManager()
     private var indexRange = -1
-  
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,12 +41,12 @@ class QuestionsViewController: UIViewController {
         
         newQuestion()
     }
-   
+    
 }
 
 extension QuestionsViewController {
     func newQuestion() {
-                
+        
         if indexRange < questionManager.countOfQuestions {
             indexRange += 1
         } else if indexRange == (questionManager.countOfQuestions) {
@@ -67,12 +67,10 @@ extension QuestionsViewController {
         }
     }
     
-    
     func showResult() {
         performSegue(withIdentifier: "result", sender: nil)
     }
-    
 }
-    
+
 
 
