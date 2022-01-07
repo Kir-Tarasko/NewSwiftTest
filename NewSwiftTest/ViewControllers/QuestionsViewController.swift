@@ -36,6 +36,8 @@ class QuestionsViewController: UIViewController {
     @IBAction func selectAnswer(_ sender: UIButton) {
         let index = buttonAnswers.firstIndex(of: sender)!
         questionManager.validateAnswer(index: index)
+        
+        newQuestion()
     }
    
 }
