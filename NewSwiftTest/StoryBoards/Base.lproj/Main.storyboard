@@ -20,6 +20,9 @@
                                 <rect key="frame" x="100" y="701" width="214" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Begin test"/>
+                                <connections>
+                                    <segue destination="2FP-bY-xF0" kind="presentation" id="dg9-rr-aSb"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -30,9 +33,6 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="35g-SC-za3" secondAttribute="trailing" constant="100" id="mYH-mI-DIV"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <segue destination="2FP-bY-xF0" kind="show" id="Izc-Ct-Iqe"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -62,21 +62,33 @@
                                         <rect key="frame" x="0.0" y="0.0" width="384" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="A"/>
+                                        <connections>
+                                            <action selector="selectAnswer:" destination="2FP-bY-xF0" eventType="touchUpInside" id="czC-ZW-b06"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3gC-WU-Cpj">
                                         <rect key="frame" x="0.0" y="73" width="384" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="B"/>
+                                        <connections>
+                                            <action selector="selectAnswer:" destination="2FP-bY-xF0" eventType="touchUpInside" id="KhI-73-bqH"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zTk-Hq-1UD">
                                         <rect key="frame" x="0.0" y="146" width="384" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="C"/>
+                                        <connections>
+                                            <action selector="selectAnswer:" destination="2FP-bY-xF0" eventType="touchUpInside" id="RZd-hh-rXt"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="irt-DU-bT6">
                                         <rect key="frame" x="0.0" y="219" width="384" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="D"/>
+                                        <connections>
+                                            <action selector="selectAnswer:" destination="2FP-bY-xF0" eventType="touchUpInside" id="aVc-R1-K7u"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
