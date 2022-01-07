@@ -13,6 +13,10 @@
 		95490ACD2788496100489858 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95490ACB2788496100489858 /* Main.storyboard */; };
 		95490ACF2788496200489858 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95490ACE2788496200489858 /* Assets.xcassets */; };
 		95490AD22788496200489858 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95490AD02788496200489858 /* LaunchScreen.storyboard */; };
+		95490ADA2788532C00489858 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95490AD92788532C00489858 /* Test.swift */; };
+		95490ADC2788539400489858 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95490ADB2788539400489858 /* DataManager.swift */; };
+		95490ADE278853E400489858 /* QuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95490ADD278853E400489858 /* QuestionsViewController.swift */; };
+		95490AE02788541300489858 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95490ADF2788541300489858 /* ResultsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		95490ACE2788496200489858 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		95490AD12788496200489858 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		95490AD32788496200489858 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95490AD92788532C00489858 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		95490ADB2788539400489858 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		95490ADD278853E400489858 /* QuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
+		95490ADF2788541300489858 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +67,10 @@
 				95490AC52788496100489858 /* AppDelegate.swift */,
 				95490AC72788496100489858 /* SceneDelegate.swift */,
 				95490AC92788496100489858 /* ViewController.swift */,
+				95490AD92788532C00489858 /* Test.swift */,
+				95490ADB2788539400489858 /* DataManager.swift */,
+				95490ADD278853E400489858 /* QuestionsViewController.swift */,
+				95490ADF2788541300489858 /* ResultsViewController.swift */,
 				95490ACB2788496100489858 /* Main.storyboard */,
 				95490ACE2788496200489858 /* Assets.xcassets */,
 				95490AD02788496200489858 /* LaunchScreen.storyboard */,
@@ -139,7 +151,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				95490ACA2788496100489858 /* ViewController.swift in Sources */,
+				95490ADC2788539400489858 /* DataManager.swift in Sources */,
+				95490ADE278853E400489858 /* QuestionsViewController.swift in Sources */,
+				95490AE02788541300489858 /* ResultsViewController.swift in Sources */,
 				95490AC62788496100489858 /* AppDelegate.swift in Sources */,
+				95490ADA2788532C00489858 /* Test.swift in Sources */,
 				95490AC82788496100489858 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
