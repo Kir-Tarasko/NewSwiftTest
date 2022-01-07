@@ -53,7 +53,7 @@ class DataManager {
     }
     
     func refreshTest() {
-        let randomIndex = Int.random(in: 0..<25)
+        let randomIndex = Int.random(in: 0..<20)
         let testData = questions[randomIndex]
         
         test = Test(question: testData.question, possibleAnswers: testData.possibleAnswers, rightedAnswer: testData.rightAnswer)

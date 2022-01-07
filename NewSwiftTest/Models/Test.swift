@@ -24,6 +24,7 @@ class Test {
         
         return answer == rightedAnswer
     }
+
     
     deinit {
         print("Test about Swift Language")

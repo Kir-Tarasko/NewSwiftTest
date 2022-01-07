@@ -15,16 +15,18 @@ class QuestionsViewController: UIViewController {
     
     @IBOutlet var buttonAnswers: [UIButton]!
     
+    
+    
     let questionManager = DataManager()
-    var totalProgress = DataManager().totalAnswers
+  
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         newQuestion()
-        progressBar.setProgress(getProgress(), animated: true)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -58,12 +60,6 @@ extension QuestionsViewController {
     func showResult() {
         performSegue(withIdentifier: "result", sender: nil)
     }
-    
-    func getProgress() -> Float {
-        let progress = Float(totalProgress / questionManager.question.count)
-        return progress
-    }
-
     
 }
     
