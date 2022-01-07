@@ -23,7 +23,7 @@ class QuestionsViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        //newQuestion()
+        newQuestion()
         progressBar.setProgress(getProgress(), animated: true)
     }
     
