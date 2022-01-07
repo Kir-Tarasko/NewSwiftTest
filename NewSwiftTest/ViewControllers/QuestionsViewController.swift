@@ -10,9 +10,7 @@ import UIKit
 class QuestionsViewController: UIViewController {
     
     @IBOutlet weak var progressBar: UIProgressView!
-    
     @IBOutlet weak var question: UILabel!
-    
     @IBOutlet var buttonAnswers: [UIButton]!
     
     
@@ -66,11 +64,7 @@ extension QuestionsViewController {
             progressBar.setProgress(totalProgress, animated: true)
         }
     }
-    
     func showResult() {
         performSegue(withIdentifier: "result", sender: nil)
     }
 }
-
-
-
