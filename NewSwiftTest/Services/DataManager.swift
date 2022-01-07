@@ -21,7 +21,7 @@ class DataManager {
         (question: "Какая из перечисленных ниже строк создаст новую переменную?",
          rightAnswer: "var name = «Tim Cook»",
          possibleAnswers: ["var name = «Tim Cook»", "fruit = «Apple»", "pet = «Rex»", "let city = «Moscow»"]),
-      
+        
         (question: "С какой буквы надо писать все типы в Swift?",
          rightAnswer: "Со строчной буквы",
          possibleAnswers: ["Со строчной буквы", "С заглавной буквы", "На свое усмотрение", "Это числовые значения, обмануть меня решили?"]),
@@ -94,7 +94,7 @@ class DataManager {
     private var test: Test!
     private var countOfAnswers = 0
     private var countOfRightAnswers = 0
-   
+    
     
     var question: String {
         return test.question
@@ -117,9 +117,9 @@ class DataManager {
     }
     
     func refreshTest(_ index: Int) {
-
+        
         let testData = questions[index]
-       
+        
         test = Test(question: testData.question, possibleAnswers: testData.possibleAnswers, rightedAnswer: testData.rightAnswer)
     }
     
@@ -129,5 +129,4 @@ class DataManager {
             countOfRightAnswers += 1
         }
     }
-
 }

@@ -33,6 +33,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="35g-SC-za3" secondAttribute="trailing" constant="100" id="mYH-mI-DIV"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="XgL-ek-Ye0"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -46,7 +47,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VvM-oy-2Hm">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VvM-oy-2Hm">
                                 <rect key="frame" x="15" y="152.5" width="384" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="qbk-lx-JSB"/>
@@ -122,7 +123,7 @@
                         <outletCollection property="buttonAnswers" destination="3gC-WU-Cpj" collectionClass="NSMutableArray" id="WJm-aL-0xp"/>
                         <outletCollection property="buttonAnswers" destination="zTk-Hq-1UD" collectionClass="NSMutableArray" id="kbj-C4-iny"/>
                         <outletCollection property="buttonAnswers" destination="irt-DU-bT6" collectionClass="NSMutableArray" id="51g-qo-Klv"/>
-                        <segue destination="Bfv-Df-C6T" kind="show" identifier="result" id="av0-hN-Wro"/>
+                        <segue destination="Bfv-Df-C6T" kind="presentation" identifier="result" id="av0-hN-Wro"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u5V-YI-5xg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -183,6 +184,10 @@
                                 <rect key="frame" x="30" y="727" width="354" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Restart"/>
+                                <connections>
+                                    <action selector="restartAction:" destination="Bfv-Df-C6T" eventType="touchUpInside" id="LGP-4s-rat"/>
+                                    <segue destination="7w3-0D-vac" kind="unwind" unwindAction="myUnwindActionWithUnwindSegue:" id="AI6-RA-GCv"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="YwM-uC-bYX"/>
@@ -203,8 +208,15 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="pxf-0b-JJk"/>
+                    <connections>
+                        <outlet property="answersTotal" destination="uOg-TB-qB6" id="sRP-5U-QDA"/>
+                        <outlet property="correctAnswersTotal" destination="MVm-Yj-by0" id="m7K-3O-Mce"/>
+                        <outlet property="totalScoreInPercents" destination="3sH-ld-2Ww" id="zZ3-cs-tyb"/>
+                        <outlet property="wrongAnswersTotal" destination="kcB-hI-3oZ" id="UIo-Rh-Z3l"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eFf-b3-0WN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="7w3-0D-vac" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1641" y="58"/>
         </scene>
