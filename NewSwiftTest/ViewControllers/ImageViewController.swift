@@ -9,8 +9,10 @@ import UIKit
 
 class ImageViewController: UIViewController {
     @IBOutlet weak var authorPhoto: UIImageView!
+// MARK: - Properties
     
     var authors: Author!
+// MARK: - View
     
     override func viewDidLoad() {
         super.viewDidLoad()

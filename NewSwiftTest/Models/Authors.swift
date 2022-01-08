@@ -13,7 +13,7 @@ struct Author {
     var surname: String
     var nickname: String
     var fullname: String {
-        "\(name)  \(surname)"
+        "\(name) \(surname)"
     }
 }
 

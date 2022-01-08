@@ -8,9 +8,10 @@
 import UIKit
 
 class AuthorsTableViewController: UITableViewController {
-
+// MARK: - Properties
+    
     let authors = Author.getInfo()
-    // MARK: - Table view data source
+// MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
        authors.count
@@ -41,41 +42,29 @@ class AuthorsTableViewController: UITableViewController {
         
         return cell
     }
+// MARK: - Table view delegate
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        let section = authors[indexPath.section].fullname
-        let author = section[indexPath.row]
-        let row = indexPath.row
-        let sec = indexPath.section
-        print(sec)
+        var author = authors[indexPath.row]
+        var row = indexPath.row
+        let section = indexPath.section
+        print(section)
         print(row)
-       
-        showVC(from: indexPath)
+        
+        if row == 0 && section == 0 {
+           performSegue(withIdentifier: "showPhoto", sender: author)
+        } else if section == 1 && row == 0 {
+            row = 1
+            author = authors[row]
+           performSegue(withIdentifier: "showPhoto", sender: author)
+        }
+        
     }
-
+// MARK: - Navigation
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let imageVC = segue.destination as? ImageViewController else { return }
-        //guard let indexPath = tableView.indexPathForSelectedRow else { return }
-       // let author = authors[indexPath.row]
         imageVC.authors = sender as? Author
-    }
-}
-
-extension AuthorsTableViewController {
-    private func showVC(from indexPath: IndexPath) {
-        switch indexPath.section {
-            case [0, 0]:
-                performSegue(withIdentifier: "showPhoto", sender: nil)
-            case [0, 1]:
-                performSegue(withIdentifier: "", sender: nil)
-            case [1, 0]:
-                performSegue(withIdentifier: "showPhoto", sender: nil)
-            case [1, 1]:
-                performSegue(withIdentifier: "", sender: nil)
-            default:
-                break
-            }
     }
 }
