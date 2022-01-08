@@ -94,7 +94,6 @@ class DataManager {
     private var countOfAnswers = 0
     private var countOfRightAnswers = 0
     
-    
     var question: String {
         return test.question
     }
