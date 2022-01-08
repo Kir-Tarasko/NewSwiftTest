@@ -9,19 +9,6 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-      
-        
-    }
-    //
-    //
-    //ars
-    //test
-//    @IBAction func myUnwindAction(unwindSegue: UIStoryboardSegue) {
-//
-//    }
-    
     @IBAction func unwindAction(unwindSegue: UIStoryboardSegue) {
         
     }

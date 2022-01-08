@@ -8,13 +8,16 @@
 import UIKit
 
 class QuestionsViewController: UIViewController {
+// MARK: - IBOutlets
     
     @IBOutlet weak var progressBar: UIProgressView!
     @IBOutlet weak var question: UILabel!
     @IBOutlet var buttonAnswers: [UIButton]!
+// MARK: - Properties
     
     let questionManager = DataManager()
     private var indexRange = -1
+// MARK: - View
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,6 +33,7 @@ class QuestionsViewController: UIViewController {
         resultVC.totalAnswers = questionManager.totalAnswers
         resultVC.totalRightAnswers = questionManager.totalRightAnswers
     }
+// MARK: - View Actions
     
     @IBAction func selectAnswer(_ sender: UIButton) {
         let index = buttonAnswers.firstIndex(of: sender)!
@@ -39,9 +43,10 @@ class QuestionsViewController: UIViewController {
     }
     
 }
+// MARK: - Methods
 
 extension QuestionsViewController {
-    func newQuestion() {
+   private func newQuestion() {
         
         if indexRange < questionManager.countOfQuestions {
             indexRange += 1
@@ -62,7 +67,7 @@ extension QuestionsViewController {
             progressBar.setProgress(totalProgress, animated: true)
         }
     }
-    func showResult() {
+    private func showResult() {
         performSegue(withIdentifier: "result", sender: nil)
     }
     
