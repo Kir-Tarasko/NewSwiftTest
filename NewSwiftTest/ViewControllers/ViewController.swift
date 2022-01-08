@@ -11,14 +11,18 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+      
         
     }
     //
     //
     //ars
     //test
-    @IBAction func myUnwindAction(unwindSegue: UIStoryboardSegue) {
+//    @IBAction func myUnwindAction(unwindSegue: UIStoryboardSegue) {
+//
+//    }
+    
+    @IBAction func unwindAction(unwindSegue: UIStoryboardSegue) {
         
     }
 }
