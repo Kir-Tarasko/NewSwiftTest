@@ -39,7 +39,7 @@ class ResultsViewController: UIViewController {
         wrongAnswersTotal.text = "Неверных ответов: \(totalAnswers - totalRightAnswers)"
         
         let score = totalRightAnswers*100/totalAnswers
-        totalScoreInPercents.text = "\(score)%"
+        totalScoreInPercents.text = "Результат - \(score)%"
     }
 // MARK: - View Actions
     
