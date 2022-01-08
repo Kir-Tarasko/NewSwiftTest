@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,18 +13,66 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swift_1200home_thumb1200_16-9" translatesAutoresizingMaskIntoConstraints="NO" id="n0f-lG-cUa">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="TZ3-fK-nvy">
+                                <rect key="frame" x="107.5" y="67" width="160" height="65.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n1J-KT-CFa">
+                                        <rect key="frame" x="7" y="0.0" width="146" height="42.5"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Swift Test">
+                                                <attributes>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <font key="NSFont" size="35" name="AppleSDGothicNeo-Medium"/>
+                                                    <font key="NSOriginalFont" size="30" name="AppleBraille-Outline6Dot"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s1A-53-OfK">
+                                        <rect key="frame" x="60" y="42.5" width="40.5" height="23"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="basic">
+                                                <attributes>
+                                                    <font key="NSFont" size="19" name="AppleSDGothicNeo-Regular"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="2Sn-PV-1U7"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="n0f-lG-cUa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="IPE-cT-1CS"/>
+                            <constraint firstItem="n0f-lG-cUa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="MGM-be-k82"/>
+                            <constraint firstItem="n0f-lG-cUa" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Wrb-gM-CK6"/>
+                            <constraint firstItem="n0f-lG-cUa" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="cqL-Gm-Rlt"/>
+                            <constraint firstItem="TZ3-fK-nvy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="67" id="dk9-j7-Yfy"/>
+                            <constraint firstItem="TZ3-fK-nvy" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="mcA-3j-FqV"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
         </scene>
     </scenes>
     <resources>
+        <image name="swift_1200home_thumb1200_16-9" width="1200" height="675"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

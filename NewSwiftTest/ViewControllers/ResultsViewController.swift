@@ -41,9 +41,4 @@ class ResultsViewController: UIViewController {
         let score = totalRightAnswers*100/totalAnswers
         totalScoreInPercents.text = "Результат - \(score)%"
     }
-// MARK: - View Actions
-    
-    @IBAction func restartAction(_ sender: UIButton) {
-        dismiss(animated: true, completion: nil)
-    }
 }
