@@ -57,10 +57,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="42" translatesAutoresizingMaskIntoConstraints="NO" id="jKj-Pq-YFg">
-                                <rect key="frame" x="15" y="518" width="384" height="304"/>
+                                <rect key="frame" x="15" y="542" width="384" height="250"/>
                                 <subviews>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XE7-LR-PcU" userLabel="A">
-                                        <rect key="frame" x="0.0" y="0.0" width="384" height="44.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="384" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="A"/>
                                         <connections>
@@ -68,7 +68,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3gC-WU-Cpj">
-                                        <rect key="frame" x="0.0" y="86.5" width="384" height="44.5"/>
+                                        <rect key="frame" x="0.0" y="73" width="384" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="B"/>
                                         <connections>
@@ -76,7 +76,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zTk-Hq-1UD">
-                                        <rect key="frame" x="0.0" y="173" width="384" height="44.5"/>
+                                        <rect key="frame" x="0.0" y="146" width="384" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="C"/>
                                         <connections>
@@ -84,7 +84,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="irt-DU-bT6">
-                                        <rect key="frame" x="0.0" y="259.5" width="384" height="44.5"/>
+                                        <rect key="frame" x="0.0" y="219" width="384" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="D"/>
                                         <connections>
@@ -105,11 +105,10 @@
                         <constraints>
                             <constraint firstItem="qRd-IV-J6n" firstAttribute="top" secondItem="dAt-Rh-HcA" secondAttribute="top" constant="20" id="3fy-EW-feD"/>
                             <constraint firstItem="dAt-Rh-HcA" firstAttribute="trailing" secondItem="VvM-oy-2Hm" secondAttribute="trailing" constant="15" id="F3H-II-HBO"/>
-                            <constraint firstItem="jKj-Pq-YFg" firstAttribute="top" secondItem="rlu-7e-Hls" secondAttribute="top" constant="518" id="LjM-jS-S66"/>
+                            <constraint firstItem="dAt-Rh-HcA" firstAttribute="bottom" secondItem="jKj-Pq-YFg" secondAttribute="bottom" constant="70" id="J1h-mg-kgE"/>
                             <constraint firstItem="dAt-Rh-HcA" firstAttribute="trailing" secondItem="qRd-IV-J6n" secondAttribute="trailing" constant="20" id="U8D-QD-6ea"/>
                             <constraint firstItem="VvM-oy-2Hm" firstAttribute="top" secondItem="rlu-7e-Hls" secondAttribute="top" constant="152.5" id="ZgC-AM-cHF"/>
                             <constraint firstItem="qRd-IV-J6n" firstAttribute="leading" secondItem="dAt-Rh-HcA" secondAttribute="leading" constant="20" id="Ziw-G9-yGF"/>
-                            <constraint firstItem="dAt-Rh-HcA" firstAttribute="bottom" secondItem="jKj-Pq-YFg" secondAttribute="bottom" constant="40" id="b9T-tS-LBn"/>
                             <constraint firstItem="jKj-Pq-YFg" firstAttribute="leading" secondItem="dAt-Rh-HcA" secondAttribute="leading" constant="15" id="ctS-VZ-WB1"/>
                             <constraint firstItem="VvM-oy-2Hm" firstAttribute="leading" secondItem="dAt-Rh-HcA" secondAttribute="leading" constant="15" id="hlF-vi-6wQ"/>
                             <constraint firstItem="dAt-Rh-HcA" firstAttribute="trailing" secondItem="jKj-Pq-YFg" secondAttribute="trailing" constant="15" id="hqY-5h-9De"/>
