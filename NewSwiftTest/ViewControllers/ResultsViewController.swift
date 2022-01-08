@@ -8,24 +8,31 @@
 import UIKit
 
 class ResultsViewController: UIViewController {
+// MARK: - IBOutlets
+    
     @IBOutlet weak var answersTotal: UILabel!
     @IBOutlet weak var correctAnswersTotal: UILabel!
     @IBOutlet weak var wrongAnswersTotal: UILabel!
     
     @IBOutlet weak var totalScoreInPercents: UILabel!
+    
+// MARK: - Properties
+    
     var totalRightAnswers: Int = 0
     var totalAnswers: Int = 0
+// MARK: - View
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         answersTotal.text = "Всего ответов: \(totalAnswers)"
         correctAnswersTotal.text = "Верных ответов: \(totalRightAnswers)"
-        wrongAnswersTotal.text = "Не верных ответов: \(totalAnswers - totalRightAnswers)"
+        wrongAnswersTotal.text = "Неверных ответов: \(totalAnswers - totalRightAnswers)"
         
         let score = totalRightAnswers*100/totalAnswers
         totalScoreInPercents.text = "\(score)%"
     }
+// MARK: - View Actions
     
     @IBAction func restartAction(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
