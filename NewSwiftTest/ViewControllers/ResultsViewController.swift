@@ -25,12 +25,21 @@ class ResultsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        answersTotal.layer.cornerRadius = 7
+        answersTotal.layer.masksToBounds = true
+        
+        correctAnswersTotal.layer.cornerRadius = 7
+        correctAnswersTotal.layer.masksToBounds = true
+        
+        wrongAnswersTotal.layer.cornerRadius = 7
+        wrongAnswersTotal.layer.masksToBounds = true
+        
         answersTotal.text = "Всего ответов: \(totalAnswers)"
         correctAnswersTotal.text = "Верных ответов: \(totalRightAnswers)"
         wrongAnswersTotal.text = "Неверных ответов: \(totalAnswers - totalRightAnswers)"
         
         let score = totalRightAnswers*100/totalAnswers
-        totalScoreInPercents.text = "\(score)%"
+        totalScoreInPercents.text = "Результат - \(score)%"
     }
 // MARK: - View Actions
     
