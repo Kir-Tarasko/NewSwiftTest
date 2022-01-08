@@ -17,6 +17,9 @@
 		95490ADC2788539400489858 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95490ADB2788539400489858 /* DataManager.swift */; };
 		95490ADE278853E400489858 /* QuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95490ADD278853E400489858 /* QuestionsViewController.swift */; };
 		95490AE02788541300489858 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95490ADF2788541300489858 /* ResultsViewController.swift */; };
+		98DB76E52789E15600422E61 /* AuthorsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DB76E42789E15600422E61 /* AuthorsTableViewController.swift */; };
+		98DB76E72789E1EB00422E61 /* Authors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DB76E62789E1EB00422E61 /* Authors.swift */; };
+		98DB76E92789F3DC00422E61 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DB76E82789F3DC00422E61 /* ImageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		95490ADB2788539400489858 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		95490ADD278853E400489858 /* QuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
 		95490ADF2788541300489858 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		98DB76E42789E15600422E61 /* AuthorsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorsTableViewController.swift; sourceTree = "<group>"; };
+		98DB76E62789E1EB00422E61 /* Authors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authors.swift; sourceTree = "<group>"; };
+		98DB76E82789F3DC00422E61 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,12 +74,28 @@
 				98FA48CF2788A7AC00402B5A /* ViewControllers */,
 				98FA48D22788A7F500402B5A /* Models */,
 				98FA48D12788A7E700402B5A /* Services */,
-				95490ACE2788496200489858 /* Assets.xcassets */,
-				95490AD32788496200489858 /* Info.plist */,
+				98DB76EB278A40B600422E61 /* Resources */,
+				98DB76EA278A40A500422E61 /* App */,
+			);
+			path = NewSwiftTest;
+			sourceTree = "<group>";
+		};
+		98DB76EA278A40A500422E61 /* App */ = {
+			isa = PBXGroup;
+			children = (
 				95490AC52788496100489858 /* AppDelegate.swift */,
 				95490AC72788496100489858 /* SceneDelegate.swift */,
 			);
-			path = NewSwiftTest;
+			path = App;
+			sourceTree = "<group>";
+		};
+		98DB76EB278A40B600422E61 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				95490ACE2788496200489858 /* Assets.xcassets */,
+				95490AD32788496200489858 /* Info.plist */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		98FA48CF2788A7AC00402B5A /* ViewControllers */ = {
@@ -82,6 +104,8 @@
 				95490AC92788496100489858 /* MainViewController.swift */,
 				95490ADD278853E400489858 /* QuestionsViewController.swift */,
 				95490ADF2788541300489858 /* ResultsViewController.swift */,
+				98DB76E42789E15600422E61 /* AuthorsTableViewController.swift */,
+				98DB76E82789F3DC00422E61 /* ImageViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -107,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				95490AD92788532C00489858 /* Test.swift */,
+				98DB76E62789E1EB00422E61 /* Authors.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -182,9 +207,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98DB76E52789E15600422E61 /* AuthorsTableViewController.swift in Sources */,
 				95490ACA2788496100489858 /* MainViewController.swift in Sources */,
+				98DB76E92789F3DC00422E61 /* ImageViewController.swift in Sources */,
 				95490ADC2788539400489858 /* DataManager.swift in Sources */,
 				95490ADE278853E400489858 /* QuestionsViewController.swift in Sources */,
+				98DB76E72789E1EB00422E61 /* Authors.swift in Sources */,
 				95490AE02788541300489858 /* ResultsViewController.swift in Sources */,
 				95490AC62788496100489858 /* AppDelegate.swift in Sources */,
 				95490ADA2788532C00489858 /* Test.swift in Sources */,
