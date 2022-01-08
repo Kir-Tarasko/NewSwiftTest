@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 class DataManager {
     private let questions :[(question: String, rightAnswer: String, possibleAnswers: [String])] = [
         (question: "Можем ли мы менять значение переменных?",
@@ -94,7 +93,6 @@ class DataManager {
     private var test: Test!
     private var countOfAnswers = 0
     private var countOfRightAnswers = 0
-    
     
     var question: String {
         return test.question
