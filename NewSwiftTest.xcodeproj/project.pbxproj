@@ -70,6 +70,7 @@
 		95490AC42788496100489858 /* NewSwiftTest */ = {
 			isa = PBXGroup;
 			children = (
+				95490AD32788496200489858 /* Info.plist */,
 				98FA48D02788A7C900402B5A /* StoryBoards */,
 				98FA48CF2788A7AC00402B5A /* ViewControllers */,
 				98FA48D22788A7F500402B5A /* Models */,
@@ -93,7 +94,6 @@
 			isa = PBXGroup;
 			children = (
 				95490ACE2788496200489858 /* Assets.xcassets */,
-				95490AD32788496200489858 /* Info.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
