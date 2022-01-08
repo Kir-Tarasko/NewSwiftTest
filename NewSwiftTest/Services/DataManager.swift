@@ -90,6 +90,7 @@ class DataManager {
          possibleAnswers: ["Постфиксные", "Суффиксные", "Префиксные", "Зависит от обстоятельств"]),
     ]
     
+    
     private var test: Test!
     private var countOfAnswers = 0
     private var countOfRightAnswers = 0
@@ -127,4 +128,21 @@ class DataManager {
             countOfRightAnswers += 1
         }
     }
+}
+
+class AuthorsData {
+    static let shared = AuthorsData()
+    
+    var names = [
+        "Арслан","Кирилл"
+    ]
+    var surnames = [
+        "Абдуллаев","Тараско"
+    ]
+    var nicknames = [
+        "auranebes","tarxxx"
+    ]
+    
+    private init() {}
+    
 }
