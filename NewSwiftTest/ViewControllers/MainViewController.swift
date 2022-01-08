@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MainViewController: UIViewController {
     
     @IBAction func unwindAction(unwindSegue: UIStoryboardSegue) {
         
