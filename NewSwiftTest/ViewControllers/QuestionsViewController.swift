@@ -65,4 +65,5 @@ extension QuestionsViewController {
     func showResult() {
         performSegue(withIdentifier: "result", sender: nil)
     }
+    
 }

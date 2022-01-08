@@ -126,7 +126,7 @@
                         <outletCollection property="buttonAnswers" destination="3gC-WU-Cpj" collectionClass="NSMutableArray" id="WJm-aL-0xp"/>
                         <outletCollection property="buttonAnswers" destination="zTk-Hq-1UD" collectionClass="NSMutableArray" id="kbj-C4-iny"/>
                         <outletCollection property="buttonAnswers" destination="irt-DU-bT6" collectionClass="NSMutableArray" id="51g-qo-Klv"/>
-                        <segue destination="Bfv-Df-C6T" kind="presentation" identifier="result" id="av0-hN-Wro"/>
+                        <segue destination="Bfv-Df-C6T" kind="show" identifier="result" id="av0-hN-Wro"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u5V-YI-5xg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -188,8 +188,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Restart"/>
                                 <connections>
-                                    <action selector="restartAction:" destination="Bfv-Df-C6T" eventType="touchUpInside" id="LGP-4s-rat"/>
-                                    <segue destination="7w3-0D-vac" kind="unwind" unwindAction="myUnwindActionWithUnwindSegue:" id="AI6-RA-GCv"/>
+                                    <segue destination="7w3-0D-vac" kind="unwind" unwindAction="unwindActionWithUnwindSegue:" id="8vm-rD-jhw"/>
                                 </connections>
                             </button>
                         </subviews>
