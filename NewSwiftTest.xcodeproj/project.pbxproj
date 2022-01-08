@@ -74,12 +74,28 @@
 				98FA48CF2788A7AC00402B5A /* ViewControllers */,
 				98FA48D22788A7F500402B5A /* Models */,
 				98FA48D12788A7E700402B5A /* Services */,
-				95490ACE2788496200489858 /* Assets.xcassets */,
-				95490AD32788496200489858 /* Info.plist */,
+				98DB76EB278A40B600422E61 /* Resources */,
+				98DB76EA278A40A500422E61 /* App */,
+			);
+			path = NewSwiftTest;
+			sourceTree = "<group>";
+		};
+		98DB76EA278A40A500422E61 /* App */ = {
+			isa = PBXGroup;
+			children = (
 				95490AC52788496100489858 /* AppDelegate.swift */,
 				95490AC72788496100489858 /* SceneDelegate.swift */,
 			);
-			path = NewSwiftTest;
+			path = App;
+			sourceTree = "<group>";
+		};
+		98DB76EB278A40B600422E61 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				95490ACE2788496200489858 /* Assets.xcassets */,
+				95490AD32788496200489858 /* Info.plist */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		98FA48CF2788A7AC00402B5A /* ViewControllers */ = {
